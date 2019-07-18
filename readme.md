@@ -14,5 +14,7 @@ This section contains intuition about the linear and logistic regression, data p
   ###### Steps to be performed
     1. Import all the libraries
     2. Import the dataset
-    3. replace the NaN to the mean of other values
+    3. replace the null values to the mean of other values
     4. Encode the categorical variables
+    5. Split the dataset to train and test sets
+    6. Feature scaling
