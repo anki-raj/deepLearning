@@ -19,8 +19,24 @@ An ANN model is built to predict whether a customer is likely to leave the bank 
     Train it on the train data set.
     test it on the test data set.
     Find the accuracy using confusion matrix
+    accuracy achieved - 85.5%
 
-### Final Accuracy Achieved : 86.5%
+### Evaluating the ANN
+    K-fold cross validation is used to evaluate the ANN
+    Use keras wrapper to wrap the cross validation of scikit-learn
+    Use 10 folds to spilt the training set by 10 and do parallel training of these subsets
+    Accuracy achieved - 83.6%
+
+### Improving The ANN
+    Dropout regularization is used to prevent overfitting
+    It randomly disables the neurons at a specified state to improve the configuaration
+
+### Tune the ANN
+    Adjust the hyperparameters like epochs, number of batches, optimizer to improve the accuracy
+    GridSearchCV is used to search for the best parameter and accuracy.
+    
+
+
 
 
 
