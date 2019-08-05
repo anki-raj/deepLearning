@@ -2,7 +2,10 @@
 
 # Data Preprocessing of the dataset
 import pandas as pd
+<<<<<<< HEAD
 import numpy as np
+=======
+>>>>>>> fa4a9d3a4c8ef4cc0170194a06826d26911c2573
 
 dataset = pd.read_csv('Churn_Modelling.csv')
 X = dataset.iloc[:,3:-1].values
@@ -29,6 +32,7 @@ X_test = sc_X.transform(X_test)
 
 # Making the ANN
 import keras #wraps the above two library. Runs on Theano and tensorflow. Numerical computational library
+<<<<<<< HEAD
 import tensorflow as tf
 from keras import backend as K
 
@@ -37,6 +41,10 @@ from keras.models import Sequential #to initialize the ANN
 from keras.layers import Dense #to create layers in ANN
 from keras.layers import Dropout # To reduce overfitting
 
+=======
+from keras.models import Sequential #to initialize the ANN
+from keras.layers import Dense #to create layers in ANN
+>>>>>>> fa4a9d3a4c8ef4cc0170194a06826d26911c2573
 
 #initializing ANN - 2 ways : Defining sequence of layers / Defining Graph
 #We'll Define sequence of layers.
@@ -45,11 +53,17 @@ classifier = Sequential()
 #Adding input layer and hidden layer : adding no. of hidden layer - average of input and output layer, initializing weights, adding
 #Rectifier activation function and the input dimentions.
 classifier.add(Dense(units=6,activation='relu',kernel_initializer='uniform',input_dim=11))
+<<<<<<< HEAD
 classifier.add(Dropout(p=0.1))
 
 #Adding hidden layer
 classifier.add(Dense(units=6,activation='relu',kernel_initializer='uniform'))
 classifier.add(Dropout(p=0.1))
+=======
+
+#Adding hidden layer
+classifier.add(Dense(units=6,activation='relu',kernel_initializer='uniform'))
+>>>>>>> fa4a9d3a4c8ef4cc0170194a06826d26911c2573
 
 #Adding output layer
 classifier.add(Dense(units=1,activation='sigmoid',kernel_initializer='uniform'))
@@ -69,6 +83,7 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
 # Final Accuracy - 86.5%
+<<<<<<< HEAD
 predict_val = classifier.predict(sc_X.transform(np.array([[0.0,0,600,1,40,3,60000,2,1,1,50000]])))
 predict_val = (predict_val > 0.5)
 
@@ -118,5 +133,7 @@ grid_search = grid_search.fit(X_train, y_train)
 best_parameters = grid_search.best_params_
 best_accuracy = grid_search.best_score_
 #Accuracy acheived - 85.1625%
+=======
+>>>>>>> fa4a9d3a4c8ef4cc0170194a06826d26911c2573
 
 
