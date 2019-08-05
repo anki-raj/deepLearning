@@ -19,7 +19,7 @@ An ANN model is built to predict whether a customer is likely to leave the bank 
     Train it on the train data set.
     test it on the test data set.
     Find the accuracy using confusion matrix
-<<<<<<< HEAD
+    
     accuracy achieved - 85.5%
 
 ### Evaluating the ANN
@@ -37,11 +37,7 @@ An ANN model is built to predict whether a customer is likely to leave the bank 
     GridSearchCV is used to search for the best parameter and accuracy.
     
 
-
-=======
-
-### Final Accuracy Achieved : 86.5%
->>>>>>> fa4a9d3a4c8ef4cc0170194a06826d26911c2573
+### Final Accuracy Achieved : 85.1625%
 
 
 
