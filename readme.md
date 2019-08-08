@@ -37,6 +37,19 @@ An ANN model is built to predict whether a customer is likely to leave the bank 
     GridSearchCV is used to search for the best parameter and accuracy.
 #### Final Accuracy Achieved : 85.1625%
 
+## CNN
+
+    #### Processes required
+    Convolution
+    reLu Layer
+    Max Pooling
+    Flattening
+    input to the ANN
+    Forward propagation
+    Backtracking
+
+
+
 
 
 
